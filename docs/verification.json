@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-30",
+  "environment": {
+    "python": "3.10.3",
+    "torch": "2.1.1+cu118",
+    "numpy": "1.26.2",
+    "scipy": "1.11.4",
+    "matplotlib": "3.8.2",
+    "PyYAML": "6.0.1",
+    "device": "cpu",
+    "threads": 1
+  },
+  "tests": {
+    "tests": 21,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_equivalence": {
+    "episodes": 8,
+    "seed": 812345,
+    "rounds": [
+      0,
+      3,
+      10
+    ],
+    "controls": [
+      "real",
+      "masked"
+    ],
+    "maximum_absolute_difference": 0.0
+  },
+  "cli_smoke": {
+    "training_steps": 4,
+    "resume_test_passed": true
+  },
+  "evaluation": {
+    "checkpoint": "pretrained/causal_kv_r3.pt",
+    "checkpoint_step": 50000,
+    "trained_rounds": 3,
+    "episodes_per_split": 1024,
+    "batch_size": 32,
+    "test_seed": 812345,
+    "ood_seed": 912345,
+    "metrics": [
+      {
+        "split": "id",
+        "control": "real",
+        "round": 3,
+        "n": 1024,
+        "mean": 0.0035713725419554976,
+        "std": 0.0028606643904283196,
+        "median": 0.0028406402561813593,
+        "p90": 0.006270527373999358,
+        "sem": 8.939576220088499e-05
+      },
+      {
+        "split": "ood",
+        "control": "real",
+        "round": 3,
+        "n": 1024,
+        "mean": 0.09718094445543102,
+        "std": 0.09259230987993049,
+        "median": 0.08487695828080177,
+        "p90": 0.17329583913087845,
+        "sem": 0.0028935096837478277
+      }
+    ]
+  }
+}

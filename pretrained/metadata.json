@@ -1,0 +1,22 @@
+{
+  "checkpoint": "pretrained/causal_kv_r3.pt",
+  "sha256": "99a2353a28bacaefd00985635f2f813c2a03a77a86cfe6b03b0ee863b349f294",
+  "selected_step": 50000,
+  "trained_rounds": 3,
+  "source_experiment": "causal_kv_icon_50k_20261015",
+  "source_dependencies": "coupled_icon data, local backbone, numerical references",
+  "initialization": "random_from_scratch",
+  "parameters": 403084,
+  "historical_mean_relative_l2": {
+    "id": 0.003571,
+    "ood": 0.097181
+  },
+  "historical_results_are_rounded": true,
+  "source_files": {
+    "experiments/causal_kv_icon_50k_20261015/causal_kv/models.py": "5a78063733ad0c8e0cca717872b1abd635db2b94807a2fa3a8c4915e6a700101",
+    "experiments/causal_kv_icon_50k_20261015/causal_kv/training.py": "8fb966377dff928e91333f44b0ca55a3be9e7402bbcb8d05029e326c6e33aba7",
+    "experiments/coupled_icon/src/models.py": "daa1303069c1a42f2a94d02da3e2da96787bbf0fe3291193d842ff4e97937242",
+    "experiments/coupled_icon/src/data.py": "303ac7a91f4229f3a9e661651f22a7db8b07760f1f815beecc7e2663f413beac",
+    "experiments/coupled_icon/src/ode_solvers.py": "0f82b3b64e849d605bf9dcdae450506215dd654433d36bbbec5c5e367e796ccd"
+  }
+}
