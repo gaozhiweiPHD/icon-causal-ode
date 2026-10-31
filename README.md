@@ -8,6 +8,8 @@ $$
 
 这是从已有 coupled ODE 实验整理出的独立 PyTorch 项目，采用 **ICON-inspired context–query Transformer**。代码包含数据生成、数值参考解、因果注意力、联合训练、评估、测试和一份已训练权重，无需访问原实验目录。
 
+对应报告：[Causal KV Communication for Coupled Operators — slides（PDF，27 页）](docs/slides.pdf)。
+
 ## 快速运行
 
 需要 Python 3.10+。在仓库根目录执行：
